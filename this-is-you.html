@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Memories ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="memory-page">
+
+        <a href="index.html" class="back-button">
+            ← Back Home
+        </a>
+
+        <div class="memory-header">
+
+            <h1>📸 Our Beautiful Memories</h1>
+
+            <p>
+                Every picture holds a little piece of our story ❤️
+            </p>
+
+        </div>
+
+
+        <div class="memory-container">
+
+            <div class="memory-card">
+
+                <img
+                    id="memoryImage"
+                    src="C:\Users\Yunik Maharjan\Desktop\Bishakha Birthday\Images\Photo (1).JPG"
+                    alt="Our Memory"
+                >
+
+                <div class="memory-info">
+
+                    <span id="memoryNumber">
+                        Memory 1
+                    </span>
+
+                    <h2 id="memoryTitle">
+                        Where It All Started ❤️
+                    </h2>
+
+                    <p id="memoryText">
+                        One of the moments I will always keep close to my heart.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="memory-controls">
+
+                <button
+                    class="memory-btn secondary-btn"
+                    onclick="previousMemory()"
+                >
+                    ← Previous
+                </button>
+
+                <button
+                    class="memory-btn"
+                    onclick="nextMemory()"
+                >
+                    Next Memory ❤️
+                </button>
+
+            </div>
+
+
+            <div class="memory-dots" id="memoryDots"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="memories.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make A Birthday Wish ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="feature-page">
+
+    <a href="index.html" class="back-button">
+        ← Birthday Home
+    </a>
+
+    <div class="feature-header">
+
+        <span class="feature-icon">🎂</span>
+
+        <h1>Make A Birthday Wish</h1>
+
+        <p>
+            Close your eyes for a second, think about something
+            you really want this year, and write it down. ✨
+        </p>
+
+    </div>
+
+
+    <div class="wish-card">
+
+        <div class="wish-cake">
+            🎂
+        </div>
+
+        <h2>What's your wish?</h2>
+
+        <p class="wish-subtitle">
+            Don't worry — I won't judge your birthday wish 😌
+        </p>
+
+
+        <form id="wishForm">
+
+            <input
+                type="hidden"
+                name="from_name"
+                value="Birthday Girl"
+            >
+
+
+            <label for="wishMessage">
+                My birthday wish...
+            </label>
+
+
+            <textarea
+                id="wishMessage"
+                name="message"
+                placeholder="I wish..."
+                maxlength="1000"
+                required
+            ></textarea>
+
+
+            <div class="character-count">
+                <span id="wishCount">0</span> / 1000
+            </div>
+
+
+            <button
+                type="submit"
+                class="wish-submit"
+                id="wishButton"
+            >
+                Send My Wish ✨
+            </button>
+
+        </form>
+
+
+        <div
+            id="wishSuccess"
+            class="wish-success"
+        >
+
+            <div class="success-icon">
+                ✨
+            </div>
+
+            <h2>
+                Wish Sent!
+            </h2>
+
+            <p>
+                Your wish has officially been sent
+                into the universe. 💗
+            </p>
+
+            <p>
+                I hope 22 makes it come true.
+            </p>
+
+        </div>
+
+
+        <p
+            id="wishError"
+            class="wish-error"
+        ></p>
+
+    </div>
+
+</div>
+
+
+<!-- EMAILJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="wishes.js"></script>
+
+</body>
+
+</html>
